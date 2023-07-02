@@ -19,6 +19,8 @@
     display: flex;
     align-items: center;
     height: 100vh;
+    height: auto;
+    width: auto;
     position: relative;
     font-family: 'Helvetica', sans-serif;
     color: #ffeded;
@@ -29,6 +31,8 @@
     will-change: transform;
 }
 
+
+
 .section h1
 {
 text-transform: uppercase;
@@ -38,6 +42,16 @@ section:nth-child(odd)
 {
     justify-content: flex-end;
 }
+
+h1{
+    font-size: 4rem;
+}
+
+.title-wrapper{
+    padding: 2rem;
+}
+
+
 
 /* custom yann */
 .experiences{
@@ -50,5 +64,49 @@ border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 padding: 5rem;
     margin: 2rem;
-//text-shadow: 0 0 10px #FFFFFF, 2px 2px 20px rgba(206,89,55,0);
+    margin-left: 0;
+/*text-shadow: 0 0 10px #FFFFFF, 2px 2px 20px rgba(206,89,55,0);*/
+    
 }
+
+@media (max-width: 1919px){
+    .experiences{
+        font-size: 1.2rem;
+    }
+    h2, h3{
+        font-size: 1.4rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 1200px){
+    
+    .section{
+        display: block;
+        height: auto;
+        font-size: 1rem;
+        padding-left: 0;
+    display: flex;
+    flex-direction: column;
+            align-items: center;
+    justify-content: center;
+        padding: 1rem;
+    }
+    .experiences{
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+        margin-left: 0;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1.4rem;
+
+    }
+    
+}
+
