@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.section
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Helvetica', sans-serif;
+    color: #ffeded;
+    
+    font-size: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    will-change: transform;
+}
+
+.section h1
+{
+text-transform: uppercase;
+}
+    
+section:nth-child(odd)
+{
+    justify-content: flex-end;
+}
+
+/* custom yann */
+.experiences{
+font-size: 2.5rem;
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 120px );
+-webkit-backdrop-filter: blur( 80px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 5rem;
+    margin: 2rem;
+//text-shadow: 0 0 10px #FFFFFF, 2px 2px 20px rgba(206,89,55,0);
+}
